@@ -8,7 +8,7 @@ const lowdb_1 = __importDefault(require("lowdb"));
 const FileSync_1 = __importDefault(require("lowdb/adapters/FileSync"));
 let db;
 const createConnection = () => {
-    const adapter = new FileSync_1.default('db.json');
+    const adapter = new FileSync_1.default("db.json");
     db = lowdb_1.default(adapter);
     db.defaults({ tasks: [] }).write();
 };

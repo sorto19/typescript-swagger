@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "name":"necesito un sitio web ",
-    "descrption": "utilizando react-native"
+    "description": "utilizando react-native"
 }
 ###
 POST http://localhost:3000/tasks
@@ -17,7 +17,7 @@ Content-Type: application/json
 
 {
     "name":"necesito mejorar a avanzado en typescript",
-    "descrption": "utilizando react-native"
+    "description": "utilizando react-native"
 }
 ###
 POST http://localhost:3000/tasks
@@ -25,5 +25,19 @@ Content-Type: application/json
 
 {
     "name":"necesito mejorar a avanzado en react",
-    "descrption": "utilizando react-native"
+    "description": "utilizando react-native"
 }
+### deleten a task
+DELETE http://localhost:3000/tasks/ZNSr7fr1QoVyFRDBYZ9M23
+### updating a task
+PUT http://localhost:3000/tasks/L-KYiiEt8QRvoDWMMzcPk
+Content-Type: application/json
+
+{
+    "name":"my first task",
+    "description":"probando sql"
+}
+
+### count task
+
+GET http://localhost:3000/tasks/L-KYiiEt8QRvoDWMMzcPk

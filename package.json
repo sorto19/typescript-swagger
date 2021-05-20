@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start":"node build/index.js",
-    "dev":"nodemon",
+    "start": "node build/index.js",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,7 +26,7 @@
     "lowdb": "^1.0.0",
     "morgan": "^1.10.0",
     "nanoid": "^3.1.23",
-    "swagger-jsdoc": "*",
+    "swagger-jsdoc": "^6.0.1",
     "swagger-ui-express": "^4.1.6"
   },
   "devDependencies": {
